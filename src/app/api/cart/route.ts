@@ -5,7 +5,7 @@ export async function GET(req: NextRequest) {
   if (!token) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
-  const rep = await fetch(`${process.env.API}cart`, {
+  const rep = await fetch(`${process.env.NEXT_PUBLIC_API}cart`, {
     headers: {
       token: token.token,
       "Content-type": "application/json",

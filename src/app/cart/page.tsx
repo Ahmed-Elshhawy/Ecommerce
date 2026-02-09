@@ -20,7 +20,12 @@ export default function Cart() {
   } = useQuery<CartResponse>({
     queryKey: ["get-cart"],
     queryFn: async () => {
-      const resp = await fetch("/api/cart");
+      // const resp = await fetch("/api/cart");
+      const resp = await fetch("/api/cart", {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+      });
       const payload = await resp.json();
       return payload;
     },
