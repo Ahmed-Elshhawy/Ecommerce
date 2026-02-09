@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <div className="bg-gray-900 w-full  h-50 px-10 py-10 flex justify-center">
+      <div className="bg-gray-900 w-full mt-10 h-40 px-10 py-10 flex justify-center">
         <p className="text-gray-100 my-10">Ahmed. All Rights Reserved</p>
       </div>
     </>

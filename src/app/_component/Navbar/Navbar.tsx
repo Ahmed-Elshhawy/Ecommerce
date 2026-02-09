@@ -124,7 +124,7 @@ export default function Navbar() {
           <ul className="font-medium flex flex-col p-4 md:p-0 rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-1 md:bg-transparent gap-6 md:gap-8  items-center">
             {status == "authenticated" ? (
               <>
-                <li className="">HI ,{session?.user?.name}</li>
+                <li className="">Hello ,{session?.user?.name}</li>
                 <li className="relative">
                   {CartData && CartData?.numOfCartItems > 0 ? (
                     <Badge className="absolute start-3 -top-4 bg-green-400 text-white ">
