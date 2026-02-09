@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ProductItem } from "../types/productInterface";
 import { ProductCard } from "../_component/ProductCard/ProductCard";
 
-export default async function Home() {
+export default async function Product() {
   let response = await fetch(
     "https://ecommerce.routemisr.com/api/v1/products",
     {
